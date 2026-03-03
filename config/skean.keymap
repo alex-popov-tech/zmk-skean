@@ -254,13 +254,13 @@
         };
 
         vukeys_to_ua {
-            bindings = <&m_f14_ua>;
+            bindings = <&m_to_ua>;
             key-positions = <38 39>;
             layers = <0>;
         };
 
         ua_to_vukeys {
-            bindings = <&m_f14_vukeys>;
+            bindings = <&m_to_vukeys>;
             key-positions = <38 39>;
             layers = <1>;
         };
@@ -277,20 +277,20 @@
     };
 
     macros {
-        m_f14_ua: m_f14_ua {
+        m_to_ua: m_to_ua {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F14 &to 1>;
-            label = "M_F14_UA";
+            bindings = <&kp F15 &to 1>;
+            label = "M_TO_UA";
             wait-ms = <30>;
             tap-ms = <40>;
         };
 
-        m_f14_vukeys: m_f14_vukeys {
+        m_to_vukeys: m_to_vukeys {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp F14 &to 0>;
-            label = "M_F14_VUKEYS";
+            label = "M_TO_VUKEYS";
             wait-ms = <30>;
             tap-ms = <40>;
         };
